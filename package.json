@@ -1,0 +1,40 @@
+{
+  "name": "@lefrankleal/react-native-bottom-tab-navigate",
+  "version": "0.1.0",
+  "description": "ReactNative Bottom Tab Bar",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lefrankleal/react-native-bottom-tab-navigate.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "bottom",
+    "tab",
+    "bar",
+    "navigate"
+  ],
+  "author": "@lefrankleal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lefrankleal/react-native-bottom-tab-navigate/issues"
+  },
+  "homepage": "https://github.com/lefrankleal/react-native-bottom-tab-navigate#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-native": "^0.64.2",
+    "react-native-svg": "^12.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.1",
+    "@types/react": "^17.0.9",
+    "@types/react-native": "^0.64.10",
+    "typescript": "^4.3.2"
+  }
+}

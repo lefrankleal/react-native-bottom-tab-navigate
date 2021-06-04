@@ -2,7 +2,7 @@
   "name": "@lefrankleal/react-native-bottom-tab-navigate",
   "version": "0.1.0",
   "description": "ReactNative Bottom Tab Bar",
-  "main": "build/index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "jest"
   },

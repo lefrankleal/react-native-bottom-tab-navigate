@@ -1,6 +1,6 @@
 {
   "name": "@lefrankleal/react-native-bottom-tab-navigate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ReactNative Bottom Tab Bar",
   "main": "index.ts",
   "scripts": {

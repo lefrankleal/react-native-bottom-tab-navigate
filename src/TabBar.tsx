@@ -1,4 +1,4 @@
-import React, { Children, ComponentType, ReactNode, useEffect, useState } from 'react'
+import React, { Children, ComponentType, useEffect, useState } from 'react'
 import {
   View,
   TouchableHighlight,
@@ -11,14 +11,8 @@ import TabBarStyles from './styles/TabBarStyles';
 
 const TabBar: ComponentType<TabBarItemProps> = (props) => {
 
-  const AnimatedCircle = Animated.createAnimatedComponent(Circle);
-  const AnimatedPath = Animated.createAnimatedComponent(Path);
-
-  useEffect(() => {
-    if (Children.toArray(props.children).length !== 3) {
-      throw new Error('Three tab should be work.');
-    }
-  }, [])
+  const AnimatedCircle = Animated.createAnimatedComponent(Circle)
+  const AnimatedPath = Animated.createAnimatedComponent(Path)
 
   const [selectedIndex, setSelectedIndex] = useState<number>(1)
   let circleRadius = new Animated.Value(546)
@@ -30,6 +24,12 @@ const TabBar: ComponentType<TabBarItemProps> = (props) => {
   const [pathB, setPathB] = useState<string>('706')
   const [_d, setD] = useState<string>('')
   const [showIcon, setShowIcon] = useState<boolean>(true)
+
+  useEffect(() => {
+    if (Children.toArray(props.children).length !== 3) {
+      throw new Error('Three tab should be work.');
+    }
+  }, [])
 
   useEffect(() => {
     circleRadius.addListener((circleRadius) => {
